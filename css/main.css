@@ -1,9 +1,9 @@
 .hero {
   position: relative;
-  background-image: url(../assets/img/Whisk_b94106be56.jpg); /* Cambia por tu imagen */
+  background-image: url(../assets/img/Whisk_b94106be56.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 60vh; /* Ajusta la altura */
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -15,7 +15,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen */
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .overlay {
@@ -49,6 +49,74 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columnas responsivas */
   gap: 2rem;
   padding: 2rem;
+}
+
+.servicio {
+  background-color: #aca963;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.servicio ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.servicios {
+  background-color: beige;
+  color: black;
+  font-family: "Roboto";
+}
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texto h2 {
+  margin-bottom: 10px;
+}
+
+.texto p {
+  line-height: 1.6;
+}
+
+.imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .texto {
+    order: 2;
+  }
+  .imagen {
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
