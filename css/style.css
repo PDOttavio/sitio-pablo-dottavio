@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-h1 {
-  color: #aed9e0ff;
-  font-family: "Roboto";
-  font-size: "20px";
-}
-
-h2 {
-  color: black(1, 10, 12);
-  font-family: "Roboto";
-  font-size: "18px";
-}
 
 #imagenportada {
   background-image: url(../assets/img/pexels-olly-3771071.jpg);
