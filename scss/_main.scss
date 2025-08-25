@@ -145,3 +145,52 @@ $shadow: rgba(0, 0, 0, 0.1);
     transform: translateX(0);
   }
 }
+
+//sobre mi
+
+.grid-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; // 2 columnas iguales
+  gap: 2rem; // separación entre columnas
+  align-items: center; // centra verticalmente texto e imagen
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .texto {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #333;
+    }
+  }
+
+  .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  // Versión responsive
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr; // una sola columna
+    text-align: center;
+
+    .texto {
+      order: 2; // texto abajo en mobile
+    }
+    .imagen {
+      order: 1; // imagen arriba en mobile
+    }
+  }
+}
