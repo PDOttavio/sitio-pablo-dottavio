@@ -1,9 +1,119 @@
+@import url(rel="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu li {
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+.hero {
+  position: relative;
+  background-image: url(../assets/img/Whisk_b94106be56.jpg); /* Cambia por tu imagen */
+  background-size: cover;
+  background-position: center;
+  min-height: 60vh; /* Ajusta la altura */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* Oscurece la imagen */
+}
+
+.overlay {
+  position: relative;
+  color: #fff;
+  max-width: 800px;
+  z-index: 1;
+}
+
+.overlay h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overlay h2 {
+    font-size: 2rem;
+  }
+  .overlay p {
+    font-size: 1rem;
+  }
+}
+.servicios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 2 columnas responsivas */
+  gap: 2rem;
+  padding: 2rem;
+}
+
 body {
   background-color: #F6F8D5;
 }
 
 h1 {
+  text-align: center;
   color: #205781;
   font-family: "Roboto";
   font-size: "20px";
