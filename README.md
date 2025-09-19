@@ -2,7 +2,7 @@ read me pagina del curso
 <h1 align="center">Hi 👋, I'm Pablo DOttavio</h1>
 <h3 align="center">A passionate frontend developer from Argentina</h3>
 
-- 🔭 I’m currently working on [Site Psicologia del Deportte](https://github.com/PDOttavio/pruebas-sitio-clari)
+- 🔭 I’m currently working on [Site Psicologia del Deportte](https://sitio-pablo-dottavio.vercel.app/)
 
 - 💬 Ask me about **web and CM services**
 
