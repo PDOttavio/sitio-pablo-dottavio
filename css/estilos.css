@@ -52,7 +52,7 @@
 }
 .hero {
   position: relative;
-  background-image: url(../assets/img/Whisk_b94106be56.jpg);
+  background-image: url(../assets/img/foto\ hero.png);
   background-size: cover;
   background-position: center;
   min-height: 60vh;
@@ -348,7 +348,7 @@
 }
 .contacto__form .form-group input:invalid,
 .contacto__form .form-group textarea:invalid {
-  border-color: #dc3545;
+  border-color: #cccccc;
 }
 .contacto__form .form-actions {
   text-align: center;
