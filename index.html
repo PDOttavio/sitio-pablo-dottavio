@@ -89,110 +89,103 @@
         </div>
       </section>
       <section class="auto-evaluacion">
-        <h2>Autoevaluación en Psicología del Deporte</h2>
-        <p>
-          Puntua las siguientes variables, siendo el menor puntaje cero, y el
-          mayor diez
-        </p>
-        <form action="https://formsubmit.co/pablodottavio@gmail.com" method="POST" class="evaluacion-form">
-          <!-- Motivación -->
-          <div class="form-item">
-            <label for="motivacion">Motivación</label>
-            <input
-              type="number"
-              id="motivacion"
-              name="motivacion"
-              min="1"
-              max="10"
-              required
-            />
+    <h2>Autoevaluación en Psicología del Deporte</h2>
+    
+    <div class="evaluacion-container">
+      <!-- Instrucciones -->
+      <div class="instrucciones">
+        <h3>Instrucciones</h3>
+        <p>Completa esta autoevaluación de manera honesta para identificar tus áreas de fortaleza y oportunidades de mejora.</p>
+        
+        <div class="escala-info">
+          <h4>Escala de puntuación:</h4>
+          <div class="escala-item">
+            <strong>0-3:</strong>
+            <p>Área que requiere desarrollo prioritario</p>
           </div>
+          <div class="escala-item">
+            <strong>4-6:</strong>
+            <p>Nivel intermedio con margen de mejora</p>
+          </div>
+          <div class="escala-item">
+            <strong>7-8:</strong>
+            <p>Buen nivel de desarrollo</p>
+          </div>
+          <div class="escala-item">
+            <strong>9-10:</strong>
+            <p>Excelente dominio de la habilidad</p>
+          </div>
+        </div>
+        
+        <p class="nota-final">Evalúa cada variable considerando tu desempeño en situaciones deportivas recientes. Sé sincero contigo mismo para obtener resultados útiles.</p>
+      </div>
 
-          <!-- Autoconfianza -->
-          <div class="form-item">
-            <label for="autoconfianza">Autoconfianza</label>
-            <input
-              type="number"
-              id="autoconfianza"
-              name="autoconfianza"
-              min="1"
-              max="10"
-              required
-            />
+      <!-- Formulario -->
+      <form action="https://formsubmit.co/pablodottavio@gmail.com" method="POST" class="evaluacion-form">
+        <!-- Datos Personales -->
+        <div class="form-section">
+          <h3>Datos Personales</h3>
+          <div class="form-row">
+            <div class="form-item">
+              <label for="nombre">Nombre *</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-item">
+              <label for="apellido">Apellido *</label>
+              <input type="text" id="apellido" name="apellido" required />
+            </div>
+            <div class="form-item">
+              <label for="edad">Edad *</label>
+              <input type="number" id="edad" name="edad" min="10" max="100" required />
+            </div>
+            <div class="form-item">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
           </div>
+        </div>
 
-          <!-- Concentración -->
-          <div class="form-item">
-            <label for="concentracion">Concentración</label>
-            <input
-              type="number"
-              id="concentracion"
-              name="concentracion"
-              min="1"
-              max="10"
-              required
-            />
+        <!-- Variables Psicológicas -->
+        <div class="form-section">
+          <h3>Variables Psicológicas (0-10)</h3>
+          <div class="form-row">
+            <div class="form-item">
+              <label for="motivacion">Motivación *</label>
+              <input type="number" id="motivacion" name="motivacion" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="autoconfianza">Autoconfianza *</label>
+              <input type="number" id="autoconfianza" name="autoconfianza" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="concentracion">Concentración *</label>
+              <input type="number" id="concentracion" name="concentracion" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="pensamientos">Gestión de pensamientos *</label>
+              <input type="number" id="pensamientos" name="pensamientos" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="estres">Gestión de estrés *</label>
+              <input type="number" id="estres" name="estres" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="liderazgo">Liderazgo *</label>
+              <input type="number" id="liderazgo" name="liderazgo" min="0" max="10" required />
+            </div>
+            <div class="form-item">
+              <label for="comunicacion">Comunicación *</label>
+              <input type="number" id="comunicacion" name="comunicacion" min="0" max="10" required />
+            </div>
           </div>
+        </div>
 
-          <!-- Gestión de pensamientos -->
-          <div class="form-item">
-            <label for="pensamientos">Gestión de pensamientos</label>
-            <input
-              type="number"
-              id="pensamientos"
-              name="pensamientos"
-              min="1"
-              max="10"
-              required
-            />
-          </div>
-
-          <!-- Gestión del estrés, miedos y presiones -->
-          <div class="form-item">
-            <label for="estres">Gestión del estrés, miedos y presiones</label>
-            <input
-              type="number"
-              id="estres"
-              name="estres"
-              min="1"
-              max="10"
-              required
-            />
-          </div>
-
-          <!-- Liderazgo -->
-          <div class="form-item">
-            <label for="liderazgo">Liderazgo</label>
-            <input
-              type="number"
-              id="liderazgo"
-              name="liderazgo"
-              min="1"
-              max="10"
-              required
-            />
-          </div>
-
-          <!-- Comunicación -->
-          <div class="form-item">
-            <label for="comunicacion">Comunicación</label>
-            <input
-              type="number"
-              id="comunicacion"
-              name="comunicacion"
-              min="1"
-              max="10"
-              required
-            />
-          </div>
-
-          <div class="form-actions">
-            <a href="mailto:pablodottavio@gmail.com">
-              <button type="button">Enviar Evaluación</button>
-            </a>
-          </div>
-        </form>
-      </section>
+        <div class="form-actions">
+          <button type="submit">Enviar Evaluación</button>
+        </div>
+      </form>
+    </div>
+  </section>
     </main>
     <footer class="footer">
       <nav class="footer__nav">
