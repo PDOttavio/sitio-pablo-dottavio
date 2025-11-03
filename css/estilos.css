@@ -52,7 +52,7 @@
 }
 .hero {
   position: relative;
-  background-image: url(../assets/img/foto\ hero.png);
+  background-image: url(../assets/img/foto-hero1.jpg);
   background-size: cover;
   background-position: center;
   min-height: 60vh;
@@ -67,7 +67,8 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .overlay {
@@ -75,16 +76,22 @@
   color: #fff;
   max-width: 800px;
   z-index: 1;
+  padding: 40px 20px;
 }
 
 .overlay h2 {
   font-size: 2.5rem;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.5px;
 }
 
 .overlay p {
   font-size: 1.1rem;
   line-height: 1.6;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+  font-weight: 400;
 }
 
 /* Responsive */
@@ -92,6 +99,7 @@
   .overlay h2 {
     font-size: 2rem;
   }
+  
   .overlay p {
     font-size: 1rem;
   }
